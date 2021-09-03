@@ -29,6 +29,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.hdesrosiers.composeanimationbasics.ui.theme.ComposeAnimationBasicsTheme
 
+//https://www.youtube.com/watch?v=7yY2OocGiQU
+
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -39,27 +41,26 @@ class MainActivity : ComponentActivity() {
             .fillMaxSize()
             .padding(30.dp)
         ) {
-          JoeBirchDemo()
-//          Column(
-//            horizontalAlignment = Alignment.CenterHorizontally
-//          ) {
-//            AnimateContentSizeDemo()
-//            Spacer(modifier = Modifier.height(30.dp))
-//            LazyColumn(
-//              horizontalAlignment = Alignment.CenterHorizontally
-//            ) {
-//              item {
-//                AnimateAsStateDemo()
-//                Spacer(modifier = Modifier.height(30.dp))
-//                UpdateTransitionDemo()
-//                Spacer(modifier = Modifier.height(30.dp))
-//                AnimatedVisibilityDemo()
-//                Spacer(modifier = Modifier.height(30.dp))
-//                CrossFadeDemo()
-//                Spacer(modifier = Modifier.height(30.dp))
-//              }
-//            }
-//          }
+          Column(
+            horizontalAlignment = Alignment.CenterHorizontally
+          ) {
+            AnimateContentSizeDemo()
+            Spacer(modifier = Modifier.height(30.dp))
+            LazyColumn(
+              horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+              item {
+                AnimateAsStateDemo()
+                Spacer(modifier = Modifier.height(30.dp))
+                UpdateTransitionDemo()
+                Spacer(modifier = Modifier.height(30.dp))
+                AnimatedVisibilityDemo()
+                Spacer(modifier = Modifier.height(30.dp))
+                CrossFadeDemo()
+                Spacer(modifier = Modifier.height(30.dp))
+              }
+            }
+          }
         }
       }
     }
